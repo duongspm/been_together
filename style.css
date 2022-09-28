@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&subset=vietnamese');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body {
+.bodi {
+ 
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;;
@@ -14,7 +20,9 @@ body {
   background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   text-shadow: 0 .2px .3px rgba(0, 0, 0, 0.353);
   background-size: cover;
+
 }
+
 /***/
 /* 
  */
@@ -25,6 +33,7 @@ img {
 }
 
 .box {
+  margin-top: 50px;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0, .1);
   padding: 1rem;
@@ -278,7 +287,7 @@ span{
 }
 .social-links{
   margin-left:8%;
-  margin-top:100px;
+ 
 }
 .social-links a{
   font-size:30px;

@@ -1,0 +1,22 @@
+{
+  "name": "been_together",
+  "version": "1.0.0",
+  "description": "Our happy time together",
+  "main": "days.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duongspm/been_together.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duongspm/been_together/issues"
+  },
+  "homepage": "https://github.com/duongspm/been_together#readme",
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

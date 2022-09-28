@@ -9,45 +9,12 @@
   <link rel="icon" href="/img/heart.png">
   <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <script src="days.js"></script>
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <title>Dun-Duongg</title>
 </head>
-<body>
-  <div id="home" class="box">
-    <h1 class="title" style="text-align: center;">YÊU EM NHẤT ĐỜI</h1>
-    <div class="about">
-      <div class="info">
-          <img src="img/duongg.jpg" class="avatar">
-          <div class="details">
-            <p class="name"><a href="https://www.facebook.com/duongspm">Trần Văn Dương</a></p>
-            <p class="born">07.11.1999</p>
-          </div>
-        </div>
 
-        <div class="heart-box">
-          <img src="img/hearts.svg" class="heart">
-        </div>
-    
-        <div class="info">
-          <img src="img/dun.png" class="avatar">
-          <div class="details">
-            <p class="name"><a href="https://www.facebook.com/profile.php?id=100004562057794">Trịnh Thị Thùy Dung</a></p>
-            <p class="born">23.07.2000</p>
-          </div>
-        </div>
-    </div>
-
-    <div class="time">
-      <h2 id="days"><span>00</span>&nbsp;DAYS</h2>
-      <p class="sup-time">
-        <span id="hours">10</span>:<span id="minutes">20</span>:<span id="seconds">16</span>
-      </p>
-      <div class="spinner">
-        <svg width='58px' height='58px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-hourglass"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><g><path fill="none" stroke="black" stroke-width="5" stroke-miterlimit="10" d="M58.4,51.7c-0.9-0.9-1.4-2-1.4-2.3s0.5-0.4,1.4-1.4 C70.8,43.8,79.8,30.5,80,15.5H70H30H20c0.2,15,9.2,28.1,21.6,32.3c0.9,0.9,1.4,1.2,1.4,1.5s-0.5,1.6-1.4,2.5 C29.2,56.1,20.2,69.5,20,85.5h10h40h10C79.8,69.5,70.8,55.9,58.4,51.7z" class="glass"></path><clipPath id="uil-hourglass-clip1"><rect x="15" y="20" width="70" height="25" class="clip"><animate attributeName="height" from="25" to="0" dur="1s" repeatCount="indefinite" vlaues="25;0;0" keyTimes="0;0.5;1"></animate><animate attributeName="y" from="20" to="45" dur="1s" repeatCount="indefinite" vlaues="20;45;45" keyTimes="0;0.5;1"></animate></rect></clipPath><clipPath id="uil-hourglass-clip2"><rect x="15" y="55" width="70" height="25" class="clip"><animate attributeName="height" from="0" to="25" dur="1s" repeatCount="indefinite" vlaues="0;25;25" keyTimes="0;0.5;1"></animate><animate attributeName="y" from="80" to="55" dur="1s" repeatCount="indefinite" vlaues="80;55;55" keyTimes="0;0.5;1"></animate></rect></clipPath><path d="M29,23c3.1,11.4,11.3,19.5,21,19.5S67.9,34.4,71,23H29z" clip-path="url(#uil-hourglass-clip1)" fill="#ffab00" class="sand"></path><path d="M71.6,78c-3-11.6-11.5-20-21.5-20s-18.5,8.4-21.5,20H71.6z" clip-path="url(#uil-hourglass-clip2)" fill="#ffab00" class="sand"></path><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="180 50 50" repeatCount="indefinite" dur="1s" values="0 50 50;0 50 50;180 50 50" keyTimes="0;0.7;1"></animateTransform></g></svg>
-      </div>
-    </div>
-    <p class="say-thank">Cám ơn em đã đến bên anh !</p>
-    <p class="say-sorry">Anh xin lỗi về những điều dại dột anh đã gây ra !</p>
-  </div>
+  
   <!---Start Dark-Theme - Sun-Theme--->
   <div id="about" class="hero">
     <nav id="navDemo">
@@ -94,6 +61,20 @@
       <a href="https://github.com/duongspm/"><i class="fab fa-github"></i></a>
     </div>
   </div>
+
+  <!-- product -->
+  <div class="card">
+    <div class="card__heart"></div>
+    <div class="card__cart"></div>
+    <div class="card__img"></div>
+    <div class="card__title"></div>
+    <div class="card__price"></div>
+    <div class="card__size"></div>
+    <div class="card__color"></div>
+    <div class="card__action"></div>
+  </div>
+  <!-- product -->
+
   <script>
     var icon = document.getElementById("icon");
     icon.onclick = function (){
@@ -107,6 +88,7 @@
       }
     }
   </script>
+  
   <!---End Dark-Theme - Sun-Theme--->
   <script>
     // Automatic Slideshow - change image every 4 seconds
@@ -143,5 +125,47 @@
       }
     }
     </script>
+
+  <!-- bentoghther -->
+  <div class="bodi">
+  <div id="home" class="box ">
+    <h1 class="title" style="text-align: center;">YÊU EM NHẤT ĐỜI</h1>
+    <div class="about">
+      <div class="info">
+          <img src="img/duongg.jpg" class="avatar">
+          <div class="details">
+            <p class="name"><a href="https://www.facebook.com/duongspm">Trần Văn Dương</a></p>
+            <p class="born">07.11.1999</p>
+          </div>
+        </div>
+
+        <div class="heart-box">
+          <img src="img/hearts.svg" class="heart">
+        </div>
+    
+        <div class="info">
+          <img src="img/dun.png" class="avatar">
+          <div class="details">
+            <p class="name"><a href="https://www.facebook.com/profile.php?id=100004562057794">Trịnh Thị Thùy Dung</a></p>
+            <p class="born">23.07.2000</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="time">
+      <h2 id="days"><span>00</span>&nbsp;DAYS</h2>
+      <p class="sup-time">
+        <span id="hours">10</span>:<span id="minutes">20</span>:<span id="seconds">16</span>
+      </p>
+      <div class="spinner">
+        <svg width='58px' height='58px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-hourglass"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><g><path fill="none" stroke="black" stroke-width="5" stroke-miterlimit="10" d="M58.4,51.7c-0.9-0.9-1.4-2-1.4-2.3s0.5-0.4,1.4-1.4 C70.8,43.8,79.8,30.5,80,15.5H70H30H20c0.2,15,9.2,28.1,21.6,32.3c0.9,0.9,1.4,1.2,1.4,1.5s-0.5,1.6-1.4,2.5 C29.2,56.1,20.2,69.5,20,85.5h10h40h10C79.8,69.5,70.8,55.9,58.4,51.7z" class="glass"></path><clipPath id="uil-hourglass-clip1"><rect x="15" y="20" width="70" height="25" class="clip"><animate attributeName="height" from="25" to="0" dur="1s" repeatCount="indefinite" vlaues="25;0;0" keyTimes="0;0.5;1"></animate><animate attributeName="y" from="20" to="45" dur="1s" repeatCount="indefinite" vlaues="20;45;45" keyTimes="0;0.5;1"></animate></rect></clipPath><clipPath id="uil-hourglass-clip2"><rect x="15" y="55" width="70" height="25" class="clip"><animate attributeName="height" from="0" to="25" dur="1s" repeatCount="indefinite" vlaues="0;25;25" keyTimes="0;0.5;1"></animate><animate attributeName="y" from="80" to="55" dur="1s" repeatCount="indefinite" vlaues="80;55;55" keyTimes="0;0.5;1"></animate></rect></clipPath><path d="M29,23c3.1,11.4,11.3,19.5,21,19.5S67.9,34.4,71,23H29z" clip-path="url(#uil-hourglass-clip1)" fill="#ffab00" class="sand"></path><path d="M71.6,78c-3-11.6-11.5-20-21.5-20s-18.5,8.4-21.5,20H71.6z" clip-path="url(#uil-hourglass-clip2)" fill="#ffab00" class="sand"></path><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="180 50 50" repeatCount="indefinite" dur="1s" values="0 50 50;0 50 50;180 50 50" keyTimes="0;0.7;1"></animateTransform></g></svg>
+      </div>
+    </div>
+    <p class="say-thank">Cám ơn em đã đến bên anh !</p>
+    <p class="say-sorry">Anh xin lỗi về những điều dại dột anh đã gây ra !</p>
+  </div>
+  </div>
+  <!-- bentoghther -->
+
 </body>
 </html>
