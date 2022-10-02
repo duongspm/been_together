@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  font-family: "Poppins";
 }
 
 .bodi {
@@ -314,3 +318,123 @@ nav ul {
   --primary-color:#000106;
   --secondary-color:#fff;
 }
+ /* product card  */
+ .product{
+  display: flex;
+  gap: 20px;
+ }
+.card{
+  background: linear-gradient(to right, #4daf54,#3d8880);
+  margin: 20px auto;
+  width: 320px;
+  height: 320px;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.card__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.card__img{
+  transition: 0.5s;
+  align-items: center;
+  justify-items: center;
+}
+.card__img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  box-shadow: #002222;
+}
+.card__title, .card__price{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #002222;
+  transition: 0.5s;
+}
+.card__title{
+  padding-top: 10px;
+  color: #665945;
+  font-weight: bold;
+  
+}
+.card__price{
+  color: #F6E6C4;
+}
+
+.card__size, .card__color{
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  font-weight: bold;
+}
+.card__size span{
+  padding: 1px 5px;
+  background: gainsboro;
+  border-radius: 5px;
+  margin: 5px;
+  color: black;
+}
+.card__color__gray{
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.card__color{
+  padding-bottom: 5px;
+}
+.card__action{
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.card__action button{
+  border: none;
+  background: #665945;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.card:hover .card__img{
+  transform: rotate(20deg) translateY(-90px);
+}
+.card:hover .card__title{
+  transform: translate(-36px,-70px);
+}
+.card:hover .card__price{
+  transform: translate(-101px,-70px);
+}
+.card__button{
+ 
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.card:hover .card__button{
+  visibility: visible;
+  opacity: 100;
+}
+.card:hover {
+  height: 420px;
+}
+.card__action:hover button{
+  background: #D5CBB6;
+  color: #000106;
+}
+.card__heart{
+  transition: 0.2s;
+}
+.card__heart:hover{
+  color: #D02823;
+}
+ /* product card */
