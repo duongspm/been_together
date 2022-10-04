@@ -427,6 +427,9 @@ nav ul {
 .card:hover {
   height: 420px;
 }
+.card1:hover {
+  height: 500px;
+}
 .card__action:hover button{
   background: #D5CBB6;
   color: #000106;
